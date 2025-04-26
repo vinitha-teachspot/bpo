@@ -488,295 +488,366 @@ class _homePageState extends State<homePage> {
                               fontSize: 45,
                               fontWeight: FontWeight.w500,
                             ),
-                          ).animate(onPlay: (controller) => controller.repeat()).shimmer(color: Colors.yellow, duration: const Duration(milliseconds: 3000)),
+                          ).animate(onPlay: (controller) => controller.repeat()).shimmer(
+                                color: Colors.yellow,
+                                duration: const Duration(milliseconds: 3000),
+                              ),
                         ),
-                        SingleChildScrollView(
-                          scrollDirection: Axis.horizontal,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Container(
-                                height: scrrenHeight * 0.4,
-                                width: scrrenWidth * 0.3,
-                                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(15)),
-                                child: Column(
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsets.only(top: eightPadding, left: fourPadding),
-                                      child: Text(
-                                        "HEALTH CARE",
-                                        style: GoogleFonts.playfair(
-                                          letterSpacing: 1,
-                                          textStyle: Theme.of(context).textTheme.displayLarge,
-                                          fontSize: 22,
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: largePadding,
-                                      child: Text(
-                                        "Patient Support Services – 24/7 assistance for your patients. Medical Billing & Coding – Accurate and compliant processing. Claims Management – Efficient claims processing for faster reimbursements. Appointment Scheduling – Seamless scheduling to reduce wait times. Healthcare Data Entry – Secure and precise data management. Telemedicine Support – Virtual healthcare solutions for remote consultations..",
-                                        style: GoogleFonts.roboto(
-                                          letterSpacing: 1.2,
-                                          color: ColorsSheet.writecontent,
-                                          textStyle: Theme.of(context).textTheme.displayLarge,
-                                          fontSize: 16,
-                                        ),
-                                        maxLines: 5,
-                                        overflow: TextOverflow.ellipsis,
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                        left: 8,
-                                        right: 8,
-                                        bottom: 8,
-                                      ),
-                                      child: Image.asset(
-                                        'assets/health_care1.jpg',
-                                        fit: BoxFit.cover,
-                                        height: scrrenHeight * 0.16,
-                                        width: scrrenWidth * 0.2,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              const SizedBox(
-                                width: 10,
-                              ),
-                              Container(
-                                height: scrrenHeight * 0.4,
-                                width: scrrenWidth * 0.3,
-                                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(15)),
-                                child: Column(
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsets.only(top: eightPadding, left: fourPadding),
-                                      child: Text(
-                                        "HR RECURITMENT & SERVICES",
-                                        style: GoogleFonts.playfair(
-                                          letterSpacing: 1,
-                                          textStyle: Theme.of(context).textTheme.displayLarge,
-                                          fontSize: 22,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.black,
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: largePadding,
-                                      child: Text(
-                                        "Full-Cycle Recruitment – From sourcing to placement, we handle it all! Executive Search & Headhunting – Secure high level talent for leadership roles. Permanent & Temporary Staffing – Flexibility for every hiring need. Industry-Specific Recruitment – Talent that fits your industry’s unique needs. Diversity, Equity, & Inclusion – Building diverse, inclusive teams. Candidate Assessment & Selection – Thorough screening for the perfect match. Onboarding & Candidate Transition – Smooth transitions for new hires. RPO Solutions – Scalable recruitment for your growing business. Employer Branding – Attract top talent by showcasing your company’s culture.",
-                                        style: GoogleFonts.roboto(
-                                          letterSpacing: 1.2,
-                                          color: ColorsSheet.writecontent,
-                                          textStyle: Theme.of(context).textTheme.displayLarge,
-                                          fontSize: 16,
-                                        ),
-                                        maxLines: 5,
-                                        overflow: TextOverflow.ellipsis,
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                        left: 8,
-                                        right: 8,
-                                        bottom: 8,
-                                      ),
-                                      child: Image.asset(
-                                        'assets/hr_rec.jpg',
-                                        fit: BoxFit.cover,
-                                        height: scrrenHeight * 0.16,
-                                        width: scrrenWidth * 0.2,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              const SizedBox(
-                                width: 10,
-                              ),
-                              Container(
-                                height: scrrenHeight * 0.4,
-                                width: scrrenWidth * 0.3,
-                                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(15)),
-                                child: Column(
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsets.only(top: eightPadding, left: fourPadding),
-                                      child: Text(
-                                        "MARKETING AND SALES",
-                                        style: GoogleFonts.playfair(
-                                          letterSpacing: 1,
-                                          textStyle: Theme.of(context).textTheme.displayLarge,
-                                          fontSize: 22,
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: largePadding,
-                                      child: Text(
-                                        "We specialize in driving results through tailored Sales & Marketing solutions that elevate your brand and accelerate growth. Our team is dedicated to helping you achieve your goals and maximize ROI with proven strategies. Let us handle your sales and marketing while you focus on growing your business",
-                                        style: GoogleFonts.roboto(
-                                          letterSpacing: 1.2,
-                                          color: ColorsSheet.writecontent,
-                                          textStyle: Theme.of(context).textTheme.displayLarge,
-                                          fontSize: 16,
-                                        ),
-                                        maxLines: 5,
-                                        overflow: TextOverflow.ellipsis,
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                        left: 8,
-                                        right: 8,
-                                        bottom: 8,
-                                      ),
-                                      child: Image.asset(
-                                        'assets/sales.jpg',
-                                        fit: BoxFit.cover,
-                                        height: scrrenHeight * 0.16,
-                                        width: scrrenWidth * 0.2,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              const SizedBox(
-                                width: 10,
-                              ),
-                              Container(
-                                height: scrrenHeight * 0.4,
-                                width: scrrenWidth * 0.3,
-                                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(15)),
-                                child: Column(
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsets.only(top: eightPadding, left: fourPadding),
-                                      child: Text(
-                                        "TECHNICAL IT /NON IT SUPPORT",
-                                        style: GoogleFonts.playfair(
-                                          letterSpacing: 1,
-                                          textStyle: Theme.of(context).textTheme.displayLarge,
-                                          fontSize: 22,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: mediumPadding,
-                                      child: Text(
-                                        "We help manage, maintain, and troubleshoot technology systems, such as computers, networks, software, and hardware. It involves assisting individuals or organizations with resolving technical problems, optimizing performance, and ensuring that their technology runs smoothly. IT support can cover a broad range of tasks, including Software Support Network Support Security Support Data Backup & Recovery User Support",
-                                        style: GoogleFonts.playfair(
-                                          letterSpacing: 1.5,
-                                          textStyle: Theme.of(context).textTheme.displayLarge,
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.w400,
-                                        ),
-                                        maxLines: 5,
-                                        overflow: TextOverflow.ellipsis,
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                        left: 8,
-                                        right: 8,
-                                        bottom: 8,
-                                      ),
-                                      child: Image.asset(
-                                        'assets/about_us.png',
-                                        fit: BoxFit.cover,
-                                        height: scrrenHeight * 0.16,
-                                        width: scrrenWidth * 0.2,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              const SizedBox(
-                                width: 10,
-                              ),
-                              Container(
-                                height: scrrenHeight * 0.4,
-                                width: scrrenWidth * 0.3,
-                                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(15)),
-                                child: Column(
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsets.only(top: eightPadding, left: fourPadding),
-                                      child: Text(
-                                        "CUSTOMER SERVICES & SUPPORT",
-                                        style: GoogleFonts.playfair(
-                                          letterSpacing: 1,
-                                          textStyle: Theme.of(context).textTheme.displayLarge,
-                                          fontSize: 22,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: mediumPadding,
-                                      child: Text(
-                                        "Your customers deserve the best, and we deliver just that. With our dedicated Customer Service & Support solutions, we ensure your clients and customer receive the assistance they need, when they need it. Why Choose Us? Reliable, scalable, and cost-effective solutions for businesses of all sizes. Improve customer loyalty and retention with top-tier support. Enhance your brand reputation through positive customer experiences. Let us handle your customer support, so you can focus on what you do best.",
-                                        style: GoogleFonts.playfair(
-                                          letterSpacing: 1.5,
-                                          textStyle: Theme.of(context).textTheme.displayLarge,
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.w400,
-                                        ),
-                                        maxLines: 5,
-                                        overflow: TextOverflow.ellipsis,
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                        left: 8,
-                                        right: 8,
-                                        bottom: 8,
-                                      ),
-                                      child: Image.asset(
-                                        'assets/about_us.png',
-                                        fit: BoxFit.cover,
-                                        height: scrrenHeight * 0.16,
-                                        width: scrrenWidth * 0.2,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              const SizedBox(
-                                width: 10,
-                              ),
-                              Container(
-                                height: scrrenHeight * 0.5,
-                                width: scrrenWidth * 0.22,
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(10),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.grey.withOpacity(0.2),
-                                      spreadRadius: 2,
-                                      blurRadius: 2,
-                                      offset: const Offset(0, 2),
-                                    ),
-                                  ],
-                                ),
-                              )
-                            ],
+                        CarouselSlider(
+                          options: CarouselOptions(
+                            height: scrrenHeight * 0.5,
+                            enlargeCenterPage: true,
+                            enableInfiniteScroll: true,
+                            autoPlay: true,
+                            viewportFraction: 0.3, // visible portion size
                           ),
-                        )
+                          items: [
+                            // Each service card
+                            buildServiceCard(
+                              context,
+                              title: "HEALTH CARE",
+                              description: "Patient Support Services – 24/7 assistance for your patients...",
+                              imagePath: 'assets/health_care1.jpg',
+                            ),
+                            buildServiceCard(
+                              context,
+                              title: "HR RECRUITMENT & SERVICES",
+                              description: "Full-Cycle Recruitment – From sourcing to placement...",
+                              imagePath: 'assets/hr_rec.jpg',
+                            ),
+                            buildServiceCard(
+                              context,
+                              title: "MARKETING AND SALES",
+                              description: "We specialize in driving results through tailored Sales & Marketing...",
+                              imagePath: 'assets/sales.jpg',
+                            ),
+                            buildServiceCard(
+                              context,
+                              title: "TECHNICAL IT / NON IT SUPPORT",
+                              description: "We help manage, maintain, and troubleshoot technology systems...",
+                              imagePath: 'assets/about_us.png',
+                            ),
+                            buildServiceCard(
+                              context,
+                              title: "CUSTOMER SERVICES & SUPPORT",
+                              description: "Your customers deserve the best, and we deliver just that...",
+                              imagePath: 'assets/about_us.png',
+                            ),
+                          ],
+                        ),
                       ],
                     ),
                   ),
                 ),
               ),
+              // Container(
+              //   color: themeNotifier.isDark ? Colors.white24 : Colors.grey.shade100,
+              //   width: scrrenWidth * 0.9,
+              //   height: scrrenHeight * 0.65,
+              //   child: Padding(
+              //     padding: const EdgeInsets.all(8.0),
+              //     child: Container(
+              //       key: ourservice,
+              //       child: Column(
+              //         children: [
+              //           Padding(
+              //             padding: const EdgeInsets.all(16.0),
+              //             child: Text(
+              //               'OUR SERVICES',
+              //               style: GoogleFonts.playfair(
+              //                 textStyle: Theme.of(context).textTheme.displayLarge,
+              //                 fontSize: 45,
+              //                 fontWeight: FontWeight.w500,
+              //               ),
+              //             ).animate(onPlay: (controller) => controller.repeat()).shimmer(color: Colors.yellow, duration: const Duration(milliseconds: 3000)),
+              //           ),
+              //           SingleChildScrollView(
+              //             scrollDirection: Axis.horizontal,
+              //             child: Row(
+              //               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              //               children: [
+              //                 Container(
+              //                   height: scrrenHeight * 0.4,
+              //                   width: scrrenWidth * 0.3,
+              //                   decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(15)),
+              //                   child: Column(
+              //                     children: [
+              //                       Padding(
+              //                         padding: const EdgeInsets.only(top: eightPadding, left: fourPadding),
+              //                         child: Text(
+              //                           "HEALTH CARE",
+              //                           style: GoogleFonts.playfair(
+              //                             letterSpacing: 1,
+              //                             textStyle: Theme.of(context).textTheme.displayLarge,
+              //                             fontSize: 22,
+              //                             color: Colors.black,
+              //                             fontWeight: FontWeight.bold,
+              //                           ),
+              //                         ),
+              //                       ),
+              //                       Padding(
+              //                         padding: largePadding,
+              //                         child: Text(
+              //                           "Patient Support Services – 24/7 assistance for your patients. Medical Billing & Coding – Accurate and compliant processing. Claims Management – Efficient claims processing for faster reimbursements. Appointment Scheduling – Seamless scheduling to reduce wait times. Healthcare Data Entry – Secure and precise data management. Telemedicine Support – Virtual healthcare solutions for remote consultations..",
+              //                           style: GoogleFonts.roboto(
+              //                             letterSpacing: 1.2,
+              //                             color: ColorsSheet.writecontent,
+              //                             textStyle: Theme.of(context).textTheme.displayLarge,
+              //                             fontSize: 16,
+              //                           ),
+              //                           maxLines: 5,
+              //                           overflow: TextOverflow.ellipsis,
+              //                         ),
+              //                       ),
+              //                       Padding(
+              //                         padding: const EdgeInsets.only(
+              //                           left: 8,
+              //                           right: 8,
+              //                           bottom: 8,
+              //                         ),
+              //                         child: Image.asset(
+              //                           'assets/health_care1.jpg',
+              //                           fit: BoxFit.cover,
+              //                           height: scrrenHeight * 0.16,
+              //                           width: scrrenWidth * 0.2,
+              //                         ),
+              //                       ),
+              //                     ],
+              //                   ),
+              //                 ),
+              //                 const SizedBox(
+              //                   width: 10,
+              //                 ),
+              //                 Container(
+              //                   height: scrrenHeight * 0.4,
+              //                   width: scrrenWidth * 0.3,
+              //                   decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(15)),
+              //                   child: Column(
+              //                     children: [
+              //                       Padding(
+              //                         padding: const EdgeInsets.only(top: eightPadding, left: fourPadding),
+              //                         child: Text(
+              //                           "HR RECURITMENT & SERVICES",
+              //                           style: GoogleFonts.playfair(
+              //                             letterSpacing: 1,
+              //                             textStyle: Theme.of(context).textTheme.displayLarge,
+              //                             fontSize: 22,
+              //                             fontWeight: FontWeight.bold,
+              //                             color: Colors.black,
+              //                           ),
+              //                         ),
+              //                       ),
+              //                       Padding(
+              //                         padding: largePadding,
+              //                         child: Text(
+              //                           "Full-Cycle Recruitment – From sourcing to placement, we handle it all! Executive Search & Headhunting – Secure high level talent for leadership roles. Permanent & Temporary Staffing – Flexibility for every hiring need. Industry-Specific Recruitment – Talent that fits your industry’s unique needs. Diversity, Equity, & Inclusion – Building diverse, inclusive teams. Candidate Assessment & Selection – Thorough screening for the perfect match. Onboarding & Candidate Transition – Smooth transitions for new hires. RPO Solutions – Scalable recruitment for your growing business. Employer Branding – Attract top talent by showcasing your company’s culture.",
+              //                           style: GoogleFonts.roboto(
+              //                             letterSpacing: 1.2,
+              //                             color: ColorsSheet.writecontent,
+              //                             textStyle: Theme.of(context).textTheme.displayLarge,
+              //                             fontSize: 16,
+              //                           ),
+              //                           maxLines: 5,
+              //                           overflow: TextOverflow.ellipsis,
+              //                         ),
+              //                       ),
+              //                       Padding(
+              //                         padding: const EdgeInsets.only(
+              //                           left: 8,
+              //                           right: 8,
+              //                           bottom: 8,
+              //                         ),
+              //                         child: Image.asset(
+              //                           'assets/hr_rec.jpg',
+              //                           fit: BoxFit.cover,
+              //                           height: scrrenHeight * 0.16,
+              //                           width: scrrenWidth * 0.2,
+              //                         ),
+              //                       ),
+              //                     ],
+              //                   ),
+              //                 ),
+              //                 const SizedBox(
+              //                   width: 10,
+              //                 ),
+              //                 Container(
+              //                   height: scrrenHeight * 0.4,
+              //                   width: scrrenWidth * 0.3,
+              //                   decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(15)),
+              //                   child: Column(
+              //                     children: [
+              //                       Padding(
+              //                         padding: const EdgeInsets.only(top: eightPadding, left: fourPadding),
+              //                         child: Text(
+              //                           "MARKETING AND SALES",
+              //                           style: GoogleFonts.playfair(
+              //                             letterSpacing: 1,
+              //                             textStyle: Theme.of(context).textTheme.displayLarge,
+              //                             fontSize: 22,
+              //                             color: Colors.black,
+              //                             fontWeight: FontWeight.bold,
+              //                           ),
+              //                         ),
+              //                       ),
+              //                       Padding(
+              //                         padding: largePadding,
+              //                         child: Text(
+              //                           "We specialize in driving results through tailored Sales & Marketing solutions that elevate your brand and accelerate growth. Our team is dedicated to helping you achieve your goals and maximize ROI with proven strategies. Let us handle your sales and marketing while you focus on growing your business",
+              //                           style: GoogleFonts.roboto(
+              //                             letterSpacing: 1.2,
+              //                             color: ColorsSheet.writecontent,
+              //                             textStyle: Theme.of(context).textTheme.displayLarge,
+              //                             fontSize: 16,
+              //                           ),
+              //                           maxLines: 5,
+              //                           overflow: TextOverflow.ellipsis,
+              //                         ),
+              //                       ),
+              //                       Padding(
+              //                         padding: const EdgeInsets.only(
+              //                           left: 8,
+              //                           right: 8,
+              //                           bottom: 8,
+              //                         ),
+              //                         child: Image.asset(
+              //                           'assets/sales.jpg',
+              //                           fit: BoxFit.cover,
+              //                           height: scrrenHeight * 0.16,
+              //                           width: scrrenWidth * 0.2,
+              //                         ),
+              //                       ),
+              //                     ],
+              //                   ),
+              //                 ),
+              //                 const SizedBox(
+              //                   width: 10,
+              //                 ),
+              //                 Container(
+              //                   height: scrrenHeight * 0.4,
+              //                   width: scrrenWidth * 0.3,
+              //                   decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(15)),
+              //                   child: Column(
+              //                     children: [
+              //                       Padding(
+              //                         padding: const EdgeInsets.only(top: eightPadding, left: fourPadding),
+              //                         child: Text(
+              //                           "TECHNICAL IT /NON IT SUPPORT",
+              //                           style: GoogleFonts.playfair(
+              //                             letterSpacing: 1,
+              //                             textStyle: Theme.of(context).textTheme.displayLarge,
+              //                             fontSize: 22,
+              //                             fontWeight: FontWeight.bold,
+              //                           ),
+              //                         ),
+              //                       ),
+              //                       Padding(
+              //                         padding: mediumPadding,
+              //                         child: Text(
+              //                           "We help manage, maintain, and troubleshoot technology systems, such as computers, networks, software, and hardware. It involves assisting individuals or organizations with resolving technical problems, optimizing performance, and ensuring that their technology runs smoothly. IT support can cover a broad range of tasks, including Software Support Network Support Security Support Data Backup & Recovery User Support",
+              //                           style: GoogleFonts.playfair(
+              //                             letterSpacing: 1.5,
+              //                             textStyle: Theme.of(context).textTheme.displayLarge,
+              //                             fontSize: 18,
+              //                             fontWeight: FontWeight.w400,
+              //                           ),
+              //                           maxLines: 5,
+              //                           overflow: TextOverflow.ellipsis,
+              //                         ),
+              //                       ),
+              //                       Padding(
+              //                         padding: const EdgeInsets.only(
+              //                           left: 8,
+              //                           right: 8,
+              //                           bottom: 8,
+              //                         ),
+              //                         child: Image.asset(
+              //                           'assets/about_us.png',
+              //                           fit: BoxFit.cover,
+              //                           height: scrrenHeight * 0.16,
+              //                           width: scrrenWidth * 0.2,
+              //                         ),
+              //                       ),
+              //                     ],
+              //                   ),
+              //                 ),
+              //                 const SizedBox(
+              //                   width: 10,
+              //                 ),
+              //                 Container(
+              //                   height: scrrenHeight * 0.4,
+              //                   width: scrrenWidth * 0.3,
+              //                   decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(15)),
+              //                   child: Column(
+              //                     children: [
+              //                       Padding(
+              //                         padding: const EdgeInsets.only(top: eightPadding, left: fourPadding),
+              //                         child: Text(
+              //                           "CUSTOMER SERVICES & SUPPORT",
+              //                           style: GoogleFonts.playfair(
+              //                             letterSpacing: 1,
+              //                             textStyle: Theme.of(context).textTheme.displayLarge,
+              //                             fontSize: 22,
+              //                             fontWeight: FontWeight.bold,
+              //                           ),
+              //                         ),
+              //                       ),
+              //                       Padding(
+              //                         padding: mediumPadding,
+              //                         child: Text(
+              //                           "Your customers deserve the best, and we deliver just that. With our dedicated Customer Service & Support solutions, we ensure your clients and customer receive the assistance they need, when they need it. Why Choose Us? Reliable, scalable, and cost-effective solutions for businesses of all sizes. Improve customer loyalty and retention with top-tier support. Enhance your brand reputation through positive customer experiences. Let us handle your customer support, so you can focus on what you do best.",
+              //                           style: GoogleFonts.playfair(
+              //                             letterSpacing: 1.5,
+              //                             textStyle: Theme.of(context).textTheme.displayLarge,
+              //                             fontSize: 18,
+              //                             fontWeight: FontWeight.w400,
+              //                           ),
+              //                           maxLines: 5,
+              //                           overflow: TextOverflow.ellipsis,
+              //                         ),
+              //                       ),
+              //                       Padding(
+              //                         padding: const EdgeInsets.only(
+              //                           left: 8,
+              //                           right: 8,
+              //                           bottom: 8,
+              //                         ),
+              //                         child: Image.asset(
+              //                           'assets/about_us.png',
+              //                           fit: BoxFit.cover,
+              //                           height: scrrenHeight * 0.16,
+              //                           width: scrrenWidth * 0.2,
+              //                         ),
+              //                       ),
+              //                     ],
+              //                   ),
+              //                 ),
+              //                 const SizedBox(
+              //                   width: 10,
+              //                 ),
+              //                 Container(
+              //                   height: scrrenHeight * 0.5,
+              //                   width: scrrenWidth * 0.22,
+              //                   decoration: BoxDecoration(
+              //                     color: Colors.white,
+              //                     borderRadius: BorderRadius.circular(10),
+              //                     boxShadow: [
+              //                       BoxShadow(
+              //                         color: Colors.grey.withOpacity(0.2),
+              //                         spreadRadius: 2,
+              //                         blurRadius: 2,
+              //                         offset: const Offset(0, 2),
+              //                       ),
+              //                     ],
+              //                   ),
+              //                 )
+              //               ],
+              //             ),
+              //           )
+              //         ],
+              //       ),
+              //     ),
+              //   ),
+              // ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -809,7 +880,7 @@ class _homePageState extends State<homePage> {
               Container(
                 key: companyjourney,
                 child: SingleChildScrollView(
-                  scrollDirection: Axis.vertical,
+                  scrollDirection: Axis.horizontal,
                   child: Column(
                     children: [
                       Padding(
@@ -825,7 +896,7 @@ class _homePageState extends State<homePage> {
                       ),
                       const SizedBox(height: 20),
                       // First define list of years and descriptions
-                  
+
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: List.generate(companyJourney.length, (index) {
@@ -1112,6 +1183,63 @@ class _homePageState extends State<homePage> {
         ),
       );
     });
+  }
+
+  Widget buildServiceCard(BuildContext context, {required String title, required String description, required String imagePath}) {
+    return Container(
+
+      margin: const EdgeInsets.symmetric(horizontal: 10),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(15),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.2),
+            spreadRadius: 2,
+            blurRadius: 5,
+            offset: const Offset(0, 3),
+          ),
+        ],
+      ),
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 8, left: 4),
+            child: Text(
+              title,
+              style: GoogleFonts.playfair(
+                letterSpacing: 1,
+                textStyle: Theme.of(context).textTheme.displayLarge,
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(12),
+            child: Text(
+              description,
+              style: GoogleFonts.roboto(
+                color: Colors.grey[700],
+                fontSize: 16,
+              ),
+              maxLines: 4, 
+              overflow: TextOverflow.ellipsis, 
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 8, right: 8, bottom: 8),
+            child: Image.asset(
+              imagePath,
+              fit: BoxFit.cover,
+              height: 120,
+              width: 120,
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
   Widget _buildStepColumn(BuildContext context, double scrrenWidth, String year, String title, bool dark) {

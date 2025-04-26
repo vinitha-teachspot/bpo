@@ -233,8 +233,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         BlocBuilder<PageChangeCubit, PageChangeState>(
                           builder: (context, pagestate) {
                             return Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              crossAxisAlignment: CrossAxisAlignment.center,
+                              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              // crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Padding(
                                   padding: const EdgeInsets.fromLTRB(8.0, 30, 0, 10),
